@@ -1,19 +1,20 @@
 ## 中国行政区经纬度查找、距离计算
 ```
-ChinaCity  文件目录
-│  
-├─mapfile               数据文件存放目录
-│  ├─city.json          中国行政区经纬度(无论市还是区都算成 省的children)
-│  └─nation.json        中国民族数据(用于处理民族自治区)
-│  
-├─coordinate.php        核心类库
-│  
-├─tool.php              工具类函数(包括生成错误日志函数)
-│  
-├─log.txt               日志记录，拷贝类库可以不带他走
-│  
-└─README.md             说明文档
-
+├─ChinaCity  类库目录
+│ │  
+│ ├─mapfile               数据文件存放目录
+│ │  ├─city.json          中国行政区经纬度(无论市还是区都算成 省的children)
+│ │  └─nation.json        中国民族数据(用于处理民族自治区)
+│ │  
+│ ├─coordinate.php        核心类库
+│ │  
+│ ├─tool.php              工具类函数(包括生成错误日志函数)
+│ │  
+│ ├─log.txt               日志记录，拷贝类库可以不带他走
+│ │  
+│ └─README.md             说明文档
+│
+└─mapfile  数据备份
 
 ```
 
