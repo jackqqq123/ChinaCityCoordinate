@@ -1,5 +1,5 @@
 # ChinaCityCoordinate
-##中国行政区经纬度查找、距离计算
+## 中国行政区经纬度查找、距离计算
 ```
 ChinaCity  文件目录
 │  
@@ -18,7 +18,7 @@ ChinaCity  文件目录
 
 ```
 
-###一、类库文件安装
+### 一、类库文件安装
 tp3.1
 
 * 放到以下路径：`ThinkPHP/Extend/Vendor`
@@ -36,7 +36,7 @@ class IndexAction extends Action {
 //如果成功，应该会看到-您已成功引用ChinaCity:coordinate.php
 ```
 
-###二、类库主要输出函数
+### 二、类库主要输出函数
 
 #### getTest  检查是否引入
 @ 输出：var_dump(您已成功引用ChinaCity:coordinate.php)
@@ -98,9 +98,9 @@ class IndexAction extends Action {
   */
 ```
 
-###三、日志文件、补充地区
+### 三、日志文件、补充地区
 日志文件记录了找不到经纬度的城市，定期查看，并从网上查找该地区经纬度补充进来，世界和平指日可待。  
-####更新经纬度
+#### 更新经纬度
 * 在log.txt复制城市名称
 * 登入[GPS经纬度](http://www.gpsspg.com/maps.htm)查找城市
 * 复制百度地图坐标
