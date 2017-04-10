@@ -19,10 +19,10 @@ ChinaCity  文件目录
 ```
 
 ### 一、类库文件安装
-tp3.1
+tp3.1  
 
-* 放到以下路径：`ThinkPHP/Extend/Vendor`
-* 控制器引入类库  
+* 放到以下路径：`ThinkPHP/Extend/Vendor`  
+* 控制器引入类库    
 ```
 <?php
 // 本类由系统自动生成，仅供测试用途
@@ -39,14 +39,14 @@ class IndexAction extends Action {
 ### 二、类库主要输出函数
 
 #### getTest  检查是否引入
-@ 输出：var_dump(您已成功引用ChinaCity:coordinate.php)
+@ 输出：var_dump(您已成功引用ChinaCity:coordinate.php)  
 栗子：  
 ```
   $coor->getTest();
 ```
 #### distance  根据输入地区计算这些地区的距离
-@ 输入：地区数组[array]（支持两个及两个以上地点）
-@ 输出：累加距离[float] / false[boolean]
+@ 输入：地区数组[array]（支持两个及两个以上地点）  
+@ 输出：累加距离[float] / false[boolean]  
 @ 栗子：  
 ```
   //支持 忽略 省市区、X族自治区 等字眼
@@ -56,9 +56,9 @@ class IndexAction extends Action {
   //输出 --->  float(1529.42)
 ```
 #### find  查询地区经纬度
-@ 输入：地区名[string]
-@ 输出：地区信息[array] / false[boolean]
-@ 记录日志：ChinaCity/log.txt 找不到的地区会记录在记录日志
+@ 输入：地区名[string]  
+@ 输出：地区信息[array] / false[boolean]  
+@ 记录日志：ChinaCity/log.txt 找不到的地区会记录在记录日志  
 @ 栗子：
 ```
   //支持 忽略 省市区、X族自治区 等字眼
@@ -101,14 +101,14 @@ class IndexAction extends Action {
 ### 三、日志文件、补充地区
 日志文件记录了找不到经纬度的城市，定期查看，并从网上查找该地区经纬度补充进来，世界和平指日可待。  
 #### 更新经纬度
-* 在log.txt复制城市名称
+* 在log.txt复制城市名称   
 * 登入[GPS经纬度](http://www.gpsspg.com/maps.htm)查找城市
-* 复制百度地图坐标
+* 复制百度地图坐标  
 * 打开`mapfile/city.json`找到 该城市所属省份 在其children下 添加如下信息
 ```
   //注意严格按照json格式   
   //log-经度(GPS经纬度中右边那个参数)  
   //lat-纬度(GPS经纬度中左边那个参数)  
 
- {"name":"民权", "log":"115.13", "lat":"34.65"},
+ {"name":"民权", "log":"115.13", "lat":"34.65"},  
 ```
